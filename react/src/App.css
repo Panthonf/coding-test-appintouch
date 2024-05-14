@@ -10,6 +10,11 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
+.header-div {
+  display: block;
+  gap: 1px;
+}
+
 .head-name {
   font-size: xx-large;
   margin: 0;
@@ -21,15 +26,16 @@ body {
 .recipes {
   position: relative;
   padding-left: 1rem;
-  font-size: xx-large;
-  font-weight: 200;
+  margin-top: 0;
+  font-size: x-large;
+  font-weight: 300;
   color: red;
   font-family: "Cedarville Cursive", sans-serif;
 }
 
 .recipes-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-template-columns: auto auto auto auto auto;
   gap: 20px;
   padding: 10px;
 }
@@ -38,7 +44,7 @@ body {
   position: relative;
   height: 300px;
   overflow: hidden;
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: transparent;
   font-size: 30px;
   text-align: center;
   border-radius: 5px;
@@ -51,6 +57,12 @@ body {
   height: 100%;
   transition: transform 0.6s;
   transform-style: preserve-3d;
+}
+
+.recipes-img {
+  width: auto;
+  height: 100%;
+  display: block;
 }
 
 .recipes-card:hover .recipes-card-inner {
@@ -75,12 +87,6 @@ body {
   transform: rotateY(180deg);
 }
 
-.recipes-img {
-  width: auto;
-  height: 100%;
-  display: block;
-}
-
 .recipes-name {
   position: absolute;
   text-align: left;
@@ -97,7 +103,7 @@ body {
   bottom: 0px;
   color: white;
   font-size: 10px;
-  font-weight: 200;
+  font-weight: 300;
   padding: 6px 10px;
 }
 
